@@ -1,0 +1,180 @@
+/* background: #FF0099;
+background-image: linear-gradient(45deg,#3023AE 0%,#FF0099 100%);
+border-radius: 30% 70% 70% 30%/30% 30% 70% 70%; */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0 20%;
+  color: hsl(0deg, 0%, 80%);
+  background: hsl(195deg, 30%, 8%);
+}
+a {
+  color: hsl(0deg, 0%, 80%);
+  text-decoration: none;
+}
+a:hover {
+  color: #ff0099;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blob {
+    width: 35dvw;
+    height: 60dvh;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    background: #ff0099;
+    background-image: linear-gradient(45deg, #3023ae 0%, #ff0099 100%);
+    position: absolute;
+    z-index: -1;
+    margin: 3% 9%;
+    right: 0;
+    animation: rotating 20s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+nav > ul {
+  width: 30dvw;
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+/* main section */
+
+main section {
+  margin-top: 10dvh;
+}
+section h2 {
+  font-size: 3em;
+}
+.containt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containt > div > h4 {
+  font-size: 2em;
+}
+.underline {
+  position: relative;
+  color: hsl(0deg, 0%, 90%);
+}
+.underline::after {
+  content: "";
+  width: 100%;
+  height: 19%;
+  background-image: url(https://www.beyondcss.dev/underline.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.techno div img {
+    width: 20vw;
+    height: 10vh;
+    object-fit: contain;
+}
+
+.techno div {
+display: flex;
+margin: 10%;
+}
+
+.post {
+  color: hsl(0deg, 0%, 90%);
+  font-size: 3em;
+}
+#resume div p {
+  color: hsl(0deg, 0%, 90%);
+}
+.all-project {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: 20px;
+  margin-top: 2dvh;
+}
+.all-project img {
+  height: 50dvh;
+  width: 62dvh;
+  border-radius: 20px;
+}
+form input,textarea {
+  background: hsl(195deg, 30%, 8%);
+  border: none;
+  border-bottom: 1px solid white;
+  margin-top: 10px;
+}
+form textarea {
+    width: 100%;
+}
+form input::placeholder,textarea::placeholder {
+    color: white;
+    font-size: 1.3em;
+}
+form .submit {
+  background: #ff0099;
+  background-image: linear-gradient(45deg, #3023ae 0%, #ff0099 100%);
+  border-radius: 10px;
+  border: none;
+  height: 7dvh;
+  width: 10dvw;
+  color: white;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  height: 30dvh;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    margin-top: 2dvh;
+    justify-content: space-between;
+    align-items: center;
+    height: 20dvh;
+}
+footer ul {
+    display: flex;
+    width: 30dvw;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    justify-content: space-between;
+}
